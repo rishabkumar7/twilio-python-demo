@@ -1,8 +1,6 @@
 #Importing the modules
-
 from flask import Flask, request
 from twilio.twiml.messaging_response import Message, MessagingResponse
-
 
 app = Flask(__name__)
 
@@ -10,7 +8,6 @@ app = Flask(__name__)
 @app.route('/sms', methods=['POST'])
 
 #Defining the function
-
 def sms():
   resp = MessagingResponse()
   resp.message('Hello, welcome to Twilio Masterclass, your host Rishab here. I have got a gift for you, Twilio Startup credits --> https://twiliostartups.com/collision')
